@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stop Watch / Timer</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="tab">
+        <button class="tab_btn" data-tab="tab-1">Stop Watch</button>
+        <button class="tab_btn" data-tab="tab-2">Timer</button>
+      </div>
+
+      <div class="tab-content stop_watch" id="tab-1">
+        <h2>Stop Watch</h2>
+        <div class="display__watch">0s</div>
+        <div class="controls">
+          <button class="btn play-pause">Start</button>
+          <button class="btn reset">Reset</button>
+        </div>
+      </div>
+
+      <div class="tab-content timer" id="tab-2">
+        <h2>Timer</h2>
+        <div class="timer__duration">
+          <label for="duration">Set Duration (in seconds):</label>
+          <input type="number" id="duration" min="1" value="300" />
+        </div>
+        <div class="display__timer">04m : 59s</div>
+        <div class="controls">
+          <button class="btn play__pause-timer">Start</button>
+          <button class="btn reset-timer">Reset</button>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
